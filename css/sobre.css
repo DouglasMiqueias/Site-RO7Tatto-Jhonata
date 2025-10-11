@@ -1,0 +1,293 @@
+/* ------------------------------
+Efeito fade-in ao rolar
+------------------------------- */
+[data-animar] {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+[data-animar].animado {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+header.topo {
+    position: relative;
+    height: 400px;
+    background: url('/html/imgs/pessoa-tatuando.jpg') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+header.topo .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(13, 13, 13, 0.752);
+}
+
+header.topo .conteudo-header {
+    position: relative;
+    z-index: 2;
+    color: #E3A85A;
+    text-shadow: 0 0 15px #E3A85A80;
+}
+
+header.topo h1 {
+    font-family:'Cinzel Decorative', serif;
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+header.topo p {
+    font-size: 1.2rem;
+    font-style: italic;
+    font-weight: 500;
+}
+
+/* ------------------------------
+Container principal
+------------------------------- */
+main.container {
+    max-width: 900px;
+    margin: -80px auto 40px;
+    padding: 0 20px;
+}
+
+/* ------------------------------
+Seção Sobre
+------------------------------- */
+section.sobre {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 60px;
+    gap: 30px;
+}
+
+section.sobre .foto-tatuador {
+    flex: 1 1 250px;
+    max-width: 300px;
+    border-radius: 20px;
+    filter: grayscale(100%);
+    box-shadow: 0 0 25px #E3A85A50;
+    transition: transform 0.3s ease;
+}
+
+section.sobre .foto-tatuador:hover {
+    transform: scale(1.05);
+    filter: grayscale(0);
+}
+
+section.sobre .texto-sobre {
+    flex: 2 1 400px;
+}
+
+section.sobre h2 {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 2rem;
+    color: #E3A85A;
+    margin-bottom: 15px;
+}
+
+section.sobre p {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+/* ------------------------------
+Seção Especialidades
+------------------------------- */
+section.especialidades {
+    margin-bottom: 60px;
+}
+
+section.especialidades h2 {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 2rem;
+    color: #E3A85A;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+section.especialidades .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 25px;
+}
+
+section.especialidades .card {
+  background: linear-gradient(135deg, #B97A2B, #E3A85A);
+  color: #0D0D0D;
+  border-radius: 20px;
+  padding: 25px 20px;
+  box-shadow: 0 0 25px #E3A85A33;
+  transition: 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+section.especialidades .card i {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #E3A85A;
+}
+
+section.especialidades .card h3 {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+section.especialidades .card p {
+    font-size: 0.9rem;
+    color: #1B1B1B;
+    text-align: center;
+}
+
+section.especialidades .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 35px #E3A85A55;
+}
+
+/* ------------------------------
+Seção Depoimentos
+------------------------------- */
+section.depoimentos {
+    margin-bottom: 60px;
+}
+
+section.depoimentos h2 {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 2rem;
+    color: #E3A85A;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+section.depoimentos .comentarios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+section.depoimentos .comentario {
+    background-color: #1B1B1B;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    color: #F5F5F5;
+    font-style: italic;
+    box-shadow: 0 0 20px #E3A85A20;
+    transition: transform 0.3s ease;
+}
+
+section.depoimentos .comentario:hover {
+    transform: translateY(-5px);
+}
+
+section.depoimentos .comentario span {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.85rem;
+    color: #E3A85A;
+}
+
+/* ------------------------------
+CTA (Call to Action)
+------------------------------- */
+section.cta {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+section.cta h2 {
+   font-family: 'Cinzel Decorative', serif;
+    font-size: 2rem;
+    color: #E3A85A;
+    margin-bottom: 10px;
+}
+
+section.cta p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #ccc;
+}
+
+section.cta .btn-agendar {
+    display: inline-block;
+    background: linear-gradient(135deg, #D38E35, #E3A85A);
+    color: #0D0D0D;
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0 0 20px #E3A85A50;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section.cta .btn-agendar:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 35px #E3A85A80;
+}
+
+/* ------------------------------
+Rodapé
+------------------------------- */
+footer {
+    padding: 20px;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #888;
+    margin-bottom: 30px;
+}
+
+footer .autor {
+    color: #E3A85A;
+    font-weight: 500;
+}
+
+/* ------------------------------
+Responsividade
+------------------------------- */
+@media (max-width: 768px) {
+
+    /* Ajusta o header para telas menores */
+    header.topo {
+        height: auto; /* deixa a altura ajustar conforme o conteúdo */
+        padding: 80px 20px 40px; /* mantém espaçamento interno */
+    }
+
+    /* Container principal */
+    main.container {
+        margin: 0 auto; /* remove margem negativa */
+        padding: 0 15px;
+    }
+
+    /* Seção Sobre */
+    section.sobre {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;          
+        margin-bottom: 30px; /* reduz ainda mais */
+    }
+
+    section.sobre .foto-tatuador {
+        margin-bottom: 0;
+    }
+
+    /* Ajuste das seções seguintes para reduzir gaps */
+    section.especialidades,
+    section.depoimentos,
+    section.cta {
+        margin-bottom: 40px; /* espaçamento uniforme menor */
+    }
+}

@@ -1,0 +1,159 @@
+body {
+  background-color: #0D0D0D;
+  color: #F5F5F5;
+  font-family: 'Cinzel Decorative', serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 30px 15px;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 900px;
+  text-align: center;
+}
+
+/* Botão Voltar */
+.voltar {
+  position: fixed;
+  top: 25px;
+  left: 25px;
+  background: linear-gradient(135deg, #D38E35, #E3A85A);
+  color: #0D0D0D;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  box-shadow: 0 0 15px #E3A85A50;
+  transition: 0.3s;
+  z-index: 10;
+}
+
+.voltar:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 25px #E3A85A;
+}
+
+/* Cabeçalho */
+header {
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+
+img.logo{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  filter: drop-shadow(0 0 20px #E3A85A);
+  object-fit: cover;
+}
+
+.titulo-cuidados {
+  font-size: 2.5rem;
+  color: #E3A85A;
+  text-shadow: 0 0 15px #E3A85A90;
+}
+
+.descricao {
+  margin-top: 10px;
+  color: #bfbfbf;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Cards de cuidados */
+.cuidados {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-bottom: 60px;
+}
+
+.card {
+  background: linear-gradient(135deg, #B97A2B, #E3A85A);
+  color: #0D0D0D;
+  border-radius: 20px;
+  padding: 25px 20px;
+  box-shadow: 0 0 25px #E3A85A33;
+  transition: 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.card i {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #0D0D0D;
+}
+
+.card h2 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  font-family: 'Cinzel Decorative', serif;
+}
+
+.card p {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.95rem;
+  color: #1B1B1B;
+  line-height: 1.5;
+}
+
+/* Efeitos ao passar o mouse */
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 35px #E3A85A55;
+}
+
+/* Rodapé */
+footer {
+  margin-top: 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  color: #BDBDBD;
+  opacity: 0.8;
+}
+
+footer p {
+  margin-bottom: 15px;
+}
+
+footer .dev {
+  font-size: 0.8rem;
+  color: #888;
+  margin-top: 5px;
+}
+
+footer .dev a {
+  color: #E3A85A;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+footer .dev a:hover {
+  text-shadow: 0 0 8px #E3A85A;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .titulo-cuidados {
+    font-size: 1.9rem;
+  }
+
+  .descricao {
+    font-size: 0.9rem;
+  }
+
+  .card {
+    padding: 20px 15px;
+  }
+}

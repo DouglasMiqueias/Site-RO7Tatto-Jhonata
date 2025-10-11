@@ -1,0 +1,145 @@
+/* CONTAINER PRINCIPAL */
+.container {
+    height: 100%;
+    max-width: 550px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    color: #fff;
+}
+
+/* LINKS GERAIS */
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* GRADIENTE PADRÃO DOURADO */
+.degrade {
+    background: linear-gradient(135deg, #C68A42, #E3A85A);
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #A9A9A9;
+}
+
+header img {
+    max-width: 180px;
+    max-height: 180px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    filter: drop-shadow(0 0 40px #E3A85A);
+    transition: .3s;
+}
+
+header img:hover {
+    transform: scale(1.05) translateY(-5px);
+    filter: drop-shadow(0 0 60px #E3A85A);
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #F5F5F5;
+    font-weight: 500;
+    font-family: 'Cinzel Decorative', serif;
+    color: #C68A42;
+    text-shadow: 0 0 15px #E3A85A90;
+}
+
+header p {
+    color: #BFBFBF;
+    font-size: 1rem;
+}
+
+/* BOTÕES LARGOS (LINKTREE) */
+section.botoes-links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+a.link button {
+    width: 100%;
+    padding: 15px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    color: #F5F5F5;
+    transition: .3s;
+    box-shadow: 0 0 15px rgba(230, 168, 90, 0.3);
+}
+
+a.link i {
+    font-size: 1.5em;
+}
+
+/* EFEITOS DE HOVER */
+a.link button:hover,
+footer a.btn-footer:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(227, 168, 90, 0.8);
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    margin: 40px 0 20px;
+}
+
+footer p{
+    margin-top: 20px;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.9rem;
+    color: #BDBDBD;
+    opacity: 0.8;
+    margin-bottom: 15px;
+}
+footer a.btn-footer {
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    font-size: 2em;
+    line-height: 60px;
+    border-radius: 50%;
+    margin: 0 10px;
+    transition: .3s;
+    background: linear-gradient(135deg, #C68A42, #E3A85A);
+    color: #fff;
+    box-shadow: 0 0 10px rgba(230, 168, 90, 0.3);
+}
+
+/* HOVER NO FOOTER */
+footer a.btn-footer:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 25px rgba(227, 168, 90, 0.9);
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 600px) {
+    header img {
+        max-width: 140px;
+    }
+
+    a.link button {
+        font-size: 1em;
+        padding: 12px 18px;
+    }
+
+    footer a.btn-footer {
+        width: 50px;
+        height: 50px;
+        font-size: 1.6em;
+        line-height: 50px;
+    }
+}
