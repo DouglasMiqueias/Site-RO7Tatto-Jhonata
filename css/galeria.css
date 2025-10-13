@@ -1,0 +1,144 @@
+/* ======== SEÇÃO INSPIRAÇÕES ======== */
+section.inspiracoes {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #0D0D0D;
+    color: #F5F5F5;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Título principal */
+section.inspiracoes h2 {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 3rem;
+    color: #E3A85A;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+/* Texto abaixo do título */
+section.inspiracoes p {
+    font-size: 1.1rem;
+    color: #CCCCCC;
+    margin-bottom: 40px;
+}
+
+/* ======== CONTAINER DOS CARDS ======== */
+.inspiracoes-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    justify-items: center;
+    margin-bottom: 60px;
+}
+
+/* ======== CARD ======== */
+.card {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 0 25px #E3A85A33;
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 100%;
+    max-width: 320px;
+    background-color: #111;
+}
+
+/* Imagem da tattoo */
+.card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+/* Efeito ao passar o mouse */
+.card:hover img {
+    transform: scale(1.05);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 40px #E3A85A55;
+}
+
+/* Título da tatuagem (legenda) */
+.card h3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 12px 10px;
+    font-size: 1.2rem;
+    color: #E3A85A;
+    background: rgba(0, 0, 0, 0.6);
+    font-family: 'Cinzel Decorative', serif;
+}
+
+/* ======== BOTÃO FINAL ======== */
+.btn-principal {
+    background-color: #E3A85A;
+    color: #0D0D0D;
+    font-weight: bold;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: 0.3s;
+    box-shadow: 0 0 15px #E3A85A33;
+}
+
+.btn-principal:hover {
+    background-color: #C28E46;
+    transform: translateY(-3px);
+    box-shadow: 0 0 25px #E3A85A55;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #888;
+    margin-bottom: 30px;
+}
+
+/* ======== RESPONSIVIDADE ======== */
+@media (max-width: 768px) {
+    section.inspiracoes {
+        padding: 60px 15px;
+    }
+
+    section.inspiracoes h2 {
+        font-size: 2.3rem;
+    }
+
+    section.inspiracoes p {
+        font-size: 1rem;
+    }
+
+    .card img {
+        height: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    section.inspiracoes {
+        padding: 50px 10px;
+    }
+
+    section.inspiracoes h2 {
+        font-size: 2rem;
+    }
+
+    .card img {
+        height: 220px;
+    }
+
+    .btn-principal {
+        font-size: 0.9rem;
+        padding: 10px 25px;
+    }
+}
