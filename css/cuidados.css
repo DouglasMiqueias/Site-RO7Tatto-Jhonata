@@ -47,14 +47,6 @@ header {
   margin-bottom: 40px;
 }
 
-img.logo{
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  margin-bottom: 15px;
-  filter: drop-shadow(0 0 20px #E3A85A);
-  object-fit: cover;
-}
 
 .titulo-cuidados {
   font-size: 2.5rem;
@@ -156,4 +148,5 @@ footer .dev a:hover {
   .card {
     padding: 20px 15px;
   }
+
 }
