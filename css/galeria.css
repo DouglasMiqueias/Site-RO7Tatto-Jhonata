@@ -1,3 +1,8 @@
+img .logo{
+    max-with: 200px;
+    border-radius: 50%;
+}
+
 /* ======== SEÇÃO INSPIRAÇÕES ======== */
 section.inspiracoes {
     text-align: center;
@@ -142,3 +147,4 @@ footer {
         padding: 10px 25px;
     }
 }
+
