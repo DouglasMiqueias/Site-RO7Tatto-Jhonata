@@ -17,6 +17,11 @@ body {
   text-align: center;
 }
 
+img .logo{
+    max-with: 200px;
+    border-radius: 50%;
+}
+
 /* Botão Voltar */
 .voltar {
   position: fixed;
@@ -150,3 +155,4 @@ footer .dev a:hover {
   }
 
 }
+
